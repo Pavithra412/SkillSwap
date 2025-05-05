@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillSwap - Micro Learning</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>SkillSwap</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Explore</a>
+      <a href="#">Add Skill</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h2>Learn and Share Skills in 60 Seconds</h2>
+    <p>Micro-lessons on coding, art, music & more!</p>
+    <button onclick="scrollToFeed()">Explore Skills</button>
+  </section>
+
+  <!-- SKILL CARDS SECTION -->
+  <section class="feed" id="feed">
+    <h2>Trending Skills</h2>
+    <div class="cards" id="cards-container">
+      <!-- Cards will be added here with JavaScript -->
+    </div>
+  </section>
+<!-- Add Skill Form Section -->
+<section class="add-skill">
+    <h2>Share Your Skill</h2>
+    <form id="skillForm">
+      <input type="text" id="title" placeholder="Skill Title" required />
+      <input type="text" id="category" placeholder="Category (e.g., Music, Coding)" required />
+      <input type="text" id="image" placeholder="Image URL" required />
+      <textarea id="description" placeholder="Short Description" required></textarea>
+      <input type="text" id="user" placeholder="Your Name" required />
+      <button type="submit">Add Skill</button>
+    </form>
+  </section>
+  <!-- Connect JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
